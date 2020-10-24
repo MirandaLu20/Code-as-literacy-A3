@@ -31,7 +31,9 @@ kd = curses.KEY_DOWN
 
 key = kr
 
+
 while True:
+
     next_key = w.getch()
     if next_key in [kr, kl, ku, kd]:
         if (key == kr and next_key != kl) or\
